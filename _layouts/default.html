@@ -26,10 +26,6 @@
         padding-bottom: 1em;
       }
 
-      body {
-        width: 100vw;
-      }
-
       p {
         font-family: 'Open Sans', 'Roboto', Arial, Helvetica, sans-serif;
         color: #303030;
@@ -58,8 +54,21 @@
         margin-top: none;
       }
 
-      header .btn {
-        margin: 1em auto;
+      .has-background {
+        padding-bottom: 3em;
+      }
+
+      .has-background .container {
+        padding: 3em;
+      }
+
+      .has-background .container h1 {
+        padding: 1em;
+      }
+      
+      .nav-wrapper {
+        padding-left: 10vw;
+        padding-right: 10vw;
       }
 
     </style>
@@ -68,25 +77,25 @@
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper grey darken-1">
-          <div class="container">
-            <a href="http://fga-gpp-mds/2018.1-Grupo3" class="brand-logo left">
-              {{ site.title | default: site.github.repository_name }}
-            </a>
-            <ul class="right">
-              {% if site.github.is_project_page %}
-              <li>
-                <a href="{{ site.github.repository_url }}" class="">GitHub</a>
-              </li>
-              {% endif %}
-            </ul>
-          </div>
+          <a href="http://fga-gpp-mds/2018.1-Grupo3" class="brand-logo left">
+            {{ site.title | default: site.github.repository_name }}
+          </a>
+          <ul class="right">
+            {% if site.github.is_project_page %}
+            <li>
+              <a href="{{ site.github.repository_url }}" class="">
+              <span class="fa fa-github"></span> GitHub
+              </a>
+            </li>
+            {% endif %}
+          </ul>
         </div>
       </nav>
     </div>
 
     <header class="grey lighten-2">
       <div id="has-background valign-wrapper">
-        <div class="container center-align">
+        <div class="container center-align" style="padding-bottom: 3em">
           <h1>
             O que é?
             <!-- {{ site.title | default: site.github.repository_name }} -->
