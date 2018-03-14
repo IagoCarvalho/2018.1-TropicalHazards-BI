@@ -1,5 +1,3 @@
-{% include page-top.html %}
-
 # 2018.1-Grupo3
 
 
@@ -27,5 +25,3 @@
 
 ## Licença
  [MIT](https://github.com/fga-gpp-mds/2018.1-Grupo3/blob/development/LICENSE)
-
-{% include footer.html %}
