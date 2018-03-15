@@ -1,4 +1,6 @@
-1- create theme for github pages (materialize.css)
-2- use jekyll partials imports
-
-3- SOLVE EVERYTHING WITH https://help.github.com/articles/customizing-css-and-html-in-your-jekyll-theme/
+- [x] create theme for github pages (materialize.css)
+- [x] use jekyll partials imports
+- [x] SOLVE EVERYTHING WITH https://help.github.com/articles/customizing-css-and-html-in-your-jekyll-theme/
+- [ ] docsmap page
+- [ ] make default document page
+- [ ] (optional) new issue link at all pages
