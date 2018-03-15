@@ -118,7 +118,19 @@
         </div>
       </nav>
     </div>
-   
+    
+    <div class="fixed-action-btn toolbar">
+      <a class="btn-floating btn-large red">
+        <i class="large material-icons">mode_edit</i>
+      </a>
+      <ul>
+        <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">insert_chart</i></a></li>
+        <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">format_quote</i></a></li>
+        <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">publish</i></a></li>
+        <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">attach_file</i></a></li>
+      </ul>
+    </div>
+    
       <header class="grey lighten-2 hoverable">
         <div id="has-background valign-wrapper">
           <div class="container center-align" style="padding-bottom: 3em; padding-top: 3em;">
@@ -171,8 +183,13 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    
     <script>
       $(".button-collapse").sideNav();
+      $('.fixed-action-btn').openFAB();
+      $('.fixed-action-btn').closeFAB();
+      $('.fixed-action-btn.toolbar').openToolbar();
+      $('.fixed-action-btn.toolbar').closeToolbar();
     </script>
 
     {% if site.google_analytics %}
