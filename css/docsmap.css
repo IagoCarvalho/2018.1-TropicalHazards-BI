@@ -1,0 +1,95 @@
+.btn-large {
+  margin: .4em;
+}
+
+#bug-btn {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
+
+.row a,
+footer a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #3f3f3f;
+  padding-top: .5em;
+  padding-bottom: .7em;
+  margin: .2em;
+  word-break: break-word;
+}
+
+p {
+  font-family: 'Open Sans', 'Roboto', Arial, Helvetica, sans-serif;
+  color: #303030;
+}
+
+footer {
+  margin-top: 2em;
+  color: #fafafa;
+  padding-top: 4em !important;
+  padding-bottom: 4em;
+  font-size: .7em;
+}
+
+.col .s12 h1,
+.col .s12 h2,
+.col .s12 h3,
+.col .s12 h4,
+.col .s12 h5,
+.col .s12 h6,
+.col .s12 p {
+  padding-top: .3em;
+  padding-bottom: .3em;
+}
+
+header h1,
+header p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-top: none;
+}
+
+.has-background {
+  padding-bottom: 3em;
+}
+
+.has-background .container h1 {
+  padding: .3em;
+}
+
+.nav-wrapper {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.btn-large .fa {
+  font-size: 1.5em;
+}
+
+main .container .row {
+  background-color: #fefefe;
+}
+
+header {
+  margin-bottom: 2em;
+}
+
+header h5 {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
