@@ -25,16 +25,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'IBM Plex Sans', 'Roboto', sans-serif;
   color: #3f3f3f;
   padding-top: .5em;
   padding-bottom: .7em;
-  margin: .2em;
+  margin-top: .2em;
+  margin-bottom: .2em;
+  margin-left: 0;
+  margin-right: 0;  
   word-break: break-word;
 }
 
 p {
-  font-family: 'Open Sans', 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
   color: #303030;
 }
 
@@ -64,12 +67,20 @@ header p {
   margin-top: none;
 }
 
-.has-background {
+#has-background {
   padding-bottom: 3em;
+  background: rgba(14, 14, 14, .7);
+  color: #fefefe;
+  height: 100%;
 }
 
-.has-background .container h1 {
+/* #has-background .container {
+  background: rgba(32, 32, 32, 0.733);  
+} */
+
+#has-background .container h1 {
   padding: .3em;
+  color: inherit;
 }
 
 .nav-wrapper {
@@ -87,9 +98,39 @@ main .container .row {
 
 header {
   margin-bottom: 2em;
+  background: url(https://www.iaspaper.net/wp-content/uploads/2017/01/Library.jpg) no-repeat center center;
+  background-size: cover;
+  height: 60vh;
+  font-weight: bold;
 }
 
+header h2 {
+  color: inherit;  
+  margin: 0;
+}
 header h5 {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  color: inherit;
 }
 
+.collection a {
+  text-decoration: none;
+}
+
+.collection-header {
+  margin: 0;
+}
+
+hr {
+  border-color: #aaa;
+  width: 45%;
+}
+
+.row h2 {
+  margin: 0 auto .2em auto;
+  padding: .2em;
+}
+
+#section2 {
+  padding-top: 43em;
+}
