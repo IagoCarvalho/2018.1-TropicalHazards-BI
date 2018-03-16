@@ -96,6 +96,10 @@ main .container .row {
   background-color: #fefefe;
 }
 
+#index-header {
+  background-image: none;
+}
+
 header {
   margin-bottom: 2em;
   background: url(https://www.iaspaper.net/wp-content/uploads/2017/01/Library.jpg) no-repeat center center;
@@ -133,4 +137,80 @@ hr {
 
 #section2 {
   padding-top: 43em;
+}
+
+
+.hide-on-small-only {
+  font-size: 1.2em;
+}
+
+.marginate {
+  margin: 2em auto 2em auto;
+}
+
+/* .marginate :not(:last-of-type){
+  margin-bottom: 2em;
+}
+
+.marginate :not(:first-of-type){
+  margin-top: 2em;
+} */
+
+.selection {
+  /* top right bottom left */
+  padding: 4em 2.5em;
+  background-color: #fff;
+}
+
+@media (max-width: 600px) {
+  #explanation {
+    background: url(http://via.placeholder.com/450x450) no-repeat center center;
+    background-size: cover;
+  }
+
+  #explanation .s12 {
+    background-color: rgba(14, 14, 14, .7);
+    color: #fafafa;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+  }
+
+  #function {
+    background: url(http://via.placeholder.com/450x450) no-repeat center center;
+    background-size: cover;
+  }
+
+  #function .s12 {
+    background-color: rgba(14, 14, 14, .7);
+    color: #fafafa;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+  }
+  #haz {
+    background: url(http://via.placeholder.com/450x450) no-repeat center center;
+    background-size: cover;
+  }
+
+  #haz .s12 {
+    background-color: rgba(14, 14, 14, .7);
+    color: #fafafa;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+  }
+
+  #dev-team {
+    background: url(http://via.placeholder.com/450x450) no-repeat center center;
+    background-size: cover;
+  }
+
+  #dev-team .s12 {
+    background-color: rgba(14, 14, 14, .7);
+    color: #fafafa;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+  }
 }

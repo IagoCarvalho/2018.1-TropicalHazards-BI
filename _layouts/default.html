@@ -99,9 +99,9 @@
         font-size: 1.5em;
       }
       
-      main .container .row {
+      /* main .container .row {
         background-color: #fefefe;
-      }
+      } */
       
       header {
         margin-bottom: 2em;
@@ -111,19 +111,28 @@
         font-family: 'Roboto', Arial, Helvetica, sans-serif;
       }
 
+      .hide-on-small-only {
+        font-size: 1.2em;
+      }
+
+      nav .brand-logo ,
+      nav .hide-on-small-only {
+        color: inherit;
+      }
+
     </style>
 
     <div class="navbar-fixed">
       <nav>
-        <div class="nav-wrapper grey darken-1">
+        <div class="nav-wrapper grey lighten-4 grey-text text-darken-4">
           <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI" class="brand-logo left ">
             Tropical Hazards BI
           </a>
           <ul class="right">
             {% if site.github.is_project_page %}
             <li>
-              <a href="{{ site.github.repository_url }}" class="">
-              <span class="fa fa-github"></span> GitHub
+              <a href="{{ site.github.repository_url }}" class="hide-on-small-only">
+                <span class="fa fa-github"></span> GitHub
               </a>
             </li>
             {% endif %}
