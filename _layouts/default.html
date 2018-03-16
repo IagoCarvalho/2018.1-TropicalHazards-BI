@@ -120,6 +120,12 @@
         color: inherit;
       }
 
+      @media (max-width: 600px) {
+        .nav-wrapper {
+          padding-right: 1vw;
+        }
+      }
+
     </style>
 
     <div class="navbar-fixed">
@@ -129,18 +135,91 @@
             Tropical Hazards BI
           </a>
           <ul class="right">
-            {% if site.github.is_project_page %}
             <li>
               <a href="{{ site.github.repository_url }}" class="hide-on-small-only">
                 <span class="fa fa-github"></span> GitHub
               </a>
             </li>
-            {% endif %}
+            <li>
+              <a href="#" data-activates="slide-out" class="button-collapse grey-text text-darken-3">
+                <i class="material-icons">menu</i>
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
     </div>
     
+
+
+
+
+    <ul id="slide-out" class="side-nav">
+      <li>
+        <a href="#!">First Sidebar Link</a>
+      </li>
+      <li>
+        <a href="#!">Second Sidebar Link</a>
+      </li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Dropdown
+              <i class="material-icons">arrow_drop_down</i>
+            </a>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  <a href="#!">First</a>
+                </li>
+                <li>
+                  <a href="#!">Second</a>
+                </li>
+                <li>
+                  <a href="#!">Third</a>
+                </li>
+                <li>
+                  <a href="#!">Fourth</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="right hide-on-med-and-down">
+      <li>
+        <a href="#!">First Sidebar Link</a>
+      </li>
+      <li>
+        <a href="#!">Second Sidebar Link</a>
+      </li>
+      <li>
+        <a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown
+          <i class="material-icons right">arrow_drop_down</i>
+        </a>
+      </li>
+      <ul id='dropdown1' class='dropdown-content'>
+        <li>
+          <a href="#!">First</a>
+        </li>
+        <li>
+          <a href="#!">Second</a>
+        </li>
+        <li>
+          <a href="#!">Third</a>
+        </li>
+        <li>
+          <a href="#!">Fourth</a>
+        </li>
+      </ul>
+    </ul>
+
+
+
+
+
+
     <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/new?template=bug_report.md&labels=bug" class="btn-floating btn-large waves-effect waves-light teal lighten-2 hoverable" id="bug-btn">
       <i class="material-icons">bug_report</i>
     </a>
@@ -154,7 +233,7 @@
           </div>
         </div>
       </main>    
-      
+
       <footer class="page-footer grey darken-3">
         <div class="container">
           {% if site.github.is_project_page %}
@@ -175,15 +254,36 @@
         </div>
       </footer>
 
+
+
+
+
+
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     
+
+
+
+
+
+
     <script>
       $(".button-collapse").sideNav();
       
       $('.fixed-action-btn.toolbar').openToolbar();
       $('.fixed-action-btn.toolbar').closeToolbar();
     </script>
+
+
+
+
+
 
     {% if site.google_analytics %}
       <script type="text/javascript">
