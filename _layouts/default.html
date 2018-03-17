@@ -115,14 +115,30 @@
         font-size: 1.2em;
       }
 
+      #sidebar-md a {
+        text-decoration: none;
+      }
+
       nav .brand-logo ,
       nav .hide-on-small-only {
         color: inherit;
       }
 
+      #slide-out li a {
+        padding-left: 2vw;
+      }
+      
+      .button-collapse {
+        display: inherit !important;
+      }
+
       @media (max-width: 600px) {
         .nav-wrapper {
-          padding-right: 1vw;
+          padding-right: 2vw;
+        }
+        
+        #menu-btn {
+          margin-right: 0;
         }
       }
 
@@ -141,7 +157,7 @@
               </a>
             </li>
             <li>
-              <a href="#" data-activates="slide-out" class="button-collapse grey-text text-darken-3">
+              <a href="#" data-activates="slide-out" class="button-collapse grey-text text-darken-3" id="menu-btn">
                 <i class="material-icons">menu</i>
               </a>
             </li>
@@ -149,112 +165,115 @@
         </div>
       </nav>
     </div>
-    
 
-
-
-
-    <ul id="slide-out" class="side-nav">
-      <li>
-        <a href="#!">First Sidebar Link</a>
+    <!-- this is the side-menu modafocka -->
+    <ul id="slide-out" class="side-nav collection">
+      <li class="no-padding collection-item 1">
+        <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI">
+          Home
+        </a>
       </li>
-      <li>
-        <a href="#!">Second Sidebar Link</a>
+      <li class="no-padding collection-item 1">
+        <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/docsmap">
+          Documentação
+        </a>
       </li>
-      <li class="no-padding">
+      <li class="no-padding collection-item">
         <ul class="collapsible collapsible-accordion">
           <li>
-            <a class="collapsible-header">Dropdown
-              <i class="material-icons">arrow_drop_down</i>
-            </a>
+            <a class="collapsible-header">Gerência</a>
             <div class="collapsible-body">
               <ul>
-                <li>
-                  <a href="#!">First</a>
-                </li>
-                <li>
-                  <a href="#!">Second</a>
-                </li>
-                <li>
-                  <a href="#!">Third</a>
-                </li>
-                <li>
-                  <a href="#!">Fourth</a>
-                </li>
+                <!-- DOCUMENTS OF GPP -->
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="no-padding collection-item">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Desenvolvimento</a>
+            <div class="collapsible-body">
+              <ul>
+                <!-- DOCUMENTS OF MDS -->
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="no-padding collection-item">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Release 1</a>
+            <div class="collapsible-body">
+              <ul>
+                <!-- DOCUMENTS OF GPP -->
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="no-padding collection-item">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Release 2</a>
+            <div class="collapsible-body">
+              <ul>
+                <!-- DOCUMENTS OF GPP -->
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="no-padding collection-item">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Release 3</a>
+            <div class="collapsible-body">
+              <ul>
+                <!-- DOCUMENTS OF GPP -->
               </ul>
             </div>
           </li>
         </ul>
       </li>
     </ul>
-    <ul class="right hide-on-med-and-down">
-      <li>
-        <a href="#!">First Sidebar Link</a>
-      </li>
-      <li>
-        <a href="#!">Second Sidebar Link</a>
-      </li>
-      <li>
-        <a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown
-          <i class="material-icons right">arrow_drop_down</i>
-        </a>
-      </li>
-      <ul id='dropdown1' class='dropdown-content'>
-        <li>
-          <a href="#!">First</a>
-        </li>
-        <li>
-          <a href="#!">Second</a>
-        </li>
-        <li>
-          <a href="#!">Third</a>
-        </li>
-        <li>
-          <a href="#!">Fourth</a>
-        </li>
-      </ul>
-    </ul>
-
-
-
-
 
 
     <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/new?template=bug_report.md&labels=bug" class="btn-floating btn-large waves-effect waves-light teal lighten-2 hoverable" id="bug-btn">
       <i class="material-icons">bug_report</i>
     </a>
 
-      <main>
+    <div class="row">
+      <div class="col s12">
         <div class="container">
-          <div class="row">
-            <div class="col s12">
-              {{ content }}
-            </div>
-          </div>
+          {{ content }}
         </div>
-      </main>    
-
-      <footer class="page-footer grey darken-3">
-        <div class="container">
-          {% if site.github.is_project_page %}
+        
+        <footer class="page-footer grey darken-3">
+          <div class="container">
+            {% if site.github.is_project_page %}
             <span class="site-footer-owner">
               <a href="{{ site.github.repository_url }}">
                 {{ site.github.repository_name }}
               </a>
-                is maintained by
+              is maintained by
               <a href="{{ site.github.owner_url }}">
                 {{ site.github.owner_name }}
               </a>.
             </span>
-          {% endif %}
-          <br>
-          <span class="site-footer-credits">This page was generated by
-            <a href="https://pages.github.com">GitHub Pages</a>.
-          </span>
-        </div>
-      </footer>
-
-
+            {% endif %}
+            <br>
+            <span class="site-footer-credits">This page was generated by
+              <a href="https://pages.github.com">GitHub Pages</a>.
+            </span>
+          </div>
+        </footer>
+      </div>
+    </div>
+      
+      
 
 
 
@@ -274,13 +293,18 @@
 
 
     <script>
-      $(".button-collapse").sideNav();
+      $(".button-collapse").sideNav({
+        menuWidth: 250,
+        draggable: true
+      });
       
       $('.fixed-action-btn.toolbar').openToolbar();
       $('.fixed-action-btn.toolbar').closeToolbar();
+
+      $().find('table').addClass('responsive-table highlight bordered');
     </script>
 
-
+<!-- 
 
 
 
@@ -295,7 +319,7 @@
         ga('create', '{{ site.google_analytics }}', 'auto');
         ga('send', 'pageview');
       </script>
-    {% endif %}
+    {% endif %} -->
 
   </body>
 </html>
